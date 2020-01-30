@@ -6,12 +6,14 @@
 .scoreboard {
   width: 58%;
   margin: 10rem auto;
-  background-color: #0b5402;
+  background-image: url("https://www.dreadcentral.com/wp-content/uploads/2019/12/THE-WITCHER-STRANGER-THINGS-3-Are-Netflix%E2%80%99s-Most-Popular-TV-Shows-of-2019-3.jpg");
+  background-position: center;
+  background-size: cover;
   color: white;
   border-radius: 0.5rem;
   margin-top: 10rem;
   padding: 5rem;
-  border: 4px solid #aaaaaa;
+  border: 4px solid yellowgreen;
 }
 
 .topRow {
@@ -28,17 +30,17 @@
   flex-direction: column;
   justify-content: space-around;
   place-items: center;
-  border: 3px solid white;
-  border-radius: 0.5rem;
+  border: 3px solid yellowgreen;
+  border-radius: 5rem;
   width: 15rem;
 }
 
 .home {
-  background-color: #656565;
+  background-color: rgb(53, 53, 104);
 }
 
 .away {
-  background-color: #af750a;
+  background-color: rgb(15, 75, 15);
 }
 
 .home__name,
@@ -48,8 +50,9 @@
 .ballOn__title,
 .quarter__title {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.75rem;
   padding: 2rem;
+  text-align: center;
 }
 
 .home__score,
@@ -61,6 +64,8 @@
   background-color: var(--black);
   color: var(--red);
   padding: 5%;
+  border-bottom: 1px solid black;
+  border-radius: 5rem;
 }
 
 .timer {
@@ -110,13 +115,15 @@
   width: 50%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.homeButtons__touchdown,
 .homeButtons__fieldGoal,
-.awayButtons__touchdown,
-.awayButtons__fieldGoal {
+.homeButtons__freeThrow,
+.homeButtons__3PointFieldGoal,
+.awayButtons__fieldGoal,
+.awayButtons__freeThrow,
+.awayButtons__3PointFieldGoal {
   margin: 1rem;
   border-radius: 4px;
 }
